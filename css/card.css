@@ -26,7 +26,7 @@ body {
     padding: 0.5rem;
     border: 1px  solid black;
     border-radius: 8px;
-    background-image: url("../assets/058.png");
+    /*background-image: url("../assets/058.png");*/
     background-repeat: no-repeat;
     background-position: center;
     background-color: #EE8130;
@@ -47,14 +47,32 @@ body {
     border: none;
     font-size: 1.2rem;
     font-weight: bold;
+    width: 60%;
 }
 
 #search:focus {
     outline: none;
 }
 
+#pokeimg-placeholder {
+    display: flex;
+    justify-content: center;
+    border: 1px  solid black;
+}
+
+#poke-img {
+    width: 150px;
+    height: 150px;
+}
+
 #data {
     background-color: crimson;
     height: 57%;
     border-radius: 8px;
+}
+
+#desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

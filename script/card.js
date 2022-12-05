@@ -1,8 +1,11 @@
 
-// qurey selector for the search bar and id
+// qurey selectors
 const search = document.querySelector('#search');
 const number = document.querySelector('#poke-id');
 const moveOne = document.querySelector('#move-one');
+const moveTwo = document.querySelector('#move-two');
+const moveThree = document.querySelector('#move-three');
+const pokeImage = document.querySelector('#poke-img');
 
 
 //making fetch to pokeapi
@@ -17,9 +20,17 @@ const fetchPokeApi = async (pokeName) => {
 search.addEventListener('change', async (event) => {
     const pokeData = await fetchPokeApi(event.target.value)
     console.log(pokeData)
+
 //    sets pokemon id
-    number.innerHTML = '#'+ pokeData.id;
+    number.innerHTML = '#'+ pokeData.id.toString().padStart(3, '0');
+
+//      sets moves
     moveOne.innerHTML = pokeData.moves[0].move.name
+    moveTwo.innerHTML = pokeData.moves[1].move.name
+    moveThree.innerHTML = pokeData.moves[2].move.name
+
+//      set image
+    pokeImage.src = pokeData.sprites.other.dream_world.front_default;
 
 });
 
