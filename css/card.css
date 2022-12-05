@@ -10,7 +10,7 @@ body {
 #pokedex {
     width: 22rem;
     height: 35rem;
-    background: #EE8130;
+    background: #ecb223;
     border: 1px  solid black;
     border-radius: 8px;
     padding: 1rem;
@@ -19,6 +19,12 @@ body {
 #top {
     height: 40%;
     padding: 0.5rem;
+    border: 1px  solid black;
+    border-radius: 8px;
+    background-image: url("../assets/058.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #EE8130;
 
 }
 
@@ -29,8 +35,18 @@ body {
 
 }
 
+#search {
+    color: black;
+    background: none;
+    border: none;
+}
+
+#search:focus {
+    outline: none;
+}
+
 #data {
     background-color: crimson;
-    height: 60%;
+    height: 57%;
     border-radius: 8px;
 }
