@@ -51,6 +51,11 @@ body {
     width: 60%;
 }
 
+#hp {
+    color: red;
+    font-weight: bold;
+}
+
 #search:focus {
     outline: none;
 }
@@ -59,7 +64,7 @@ body {
     display: flex;
     justify-content: center;
     border: 5px  solid rgb(245, 189, 31);
-    margin-bottom: 2.5rem;
+    margin-bottom: .25rem;
 }
 
 #poke-img {
@@ -68,19 +73,40 @@ body {
 }
 
 #data {
-    background-color: crimson;
-    height: 57%;
-    border-radius: 8px;
+    /*background-color: crimson;*/
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    font-weight: bold;
+    /*height: 57%;*/
+    /*border-radius: 8px;*/
 }
 
-#desc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/*#desc {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
 
 #type {
     border: 1px  solid black;
     border-radius: 15px;
 }
+
+#about {
+    margin: auto auto 1rem;
+    width: 90%;
+    font-size: 9px;
+    font-weight: normal;
+    font-style: italic;
+    background-color: rgb(245, 189, 31) ;
+    /*border: 1px  solid black;*/
+    padding: 0 .75rem;
+}
+
+hr {
+    border: 1px solid black;
+    width: 250%;
+}
+
 
