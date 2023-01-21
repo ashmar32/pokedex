@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Ketchum, sans-serif  ;
+    font-family:  sans-serif  ;
 }
 
 body {
@@ -15,17 +15,17 @@ body {
 #pokedex {
     width: 22rem;
     height: 35rem;
-    background: #ecb223;
+    background: rgb(245, 189, 31);
     border: 1px  solid black;
     border-radius: 8px;
-    padding: 1rem;
+    padding: 1.25rem;
 }
 
 #top {
-    height: 40%;
-    padding: 0.5rem;
-    border: 1px  solid black;
-    border-radius: 8px;
+    height: 100%;
+    padding: 1.25rem;
+    /*border: 1px  solid black;*/
+    /*border-radius: 8px;*/
     /*background-image: url("../assets/058.png");*/
     background-repeat: no-repeat;
     background-position: center;
@@ -37,8 +37,8 @@ body {
     display: flex;
     justify-content: space-between;
     color: black;
-    border: 1px  solid black;
-    padding: 0 1.5rem;
+    /*border: 1px  solid black;         this border helps me see the diff*/
+    /*padding: 0 1.5rem;                Dont need adds padding to left and right*/
 
 }
 
@@ -58,7 +58,8 @@ body {
 #pokeimg-placeholder {
     display: flex;
     justify-content: center;
-    border: 1px  solid black;
+    border: 5px  solid rgb(245, 189, 31);
+    margin-bottom: 2.5rem;
 }
 
 #poke-img {
@@ -77,3 +78,9 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+#type {
+    border: 1px  solid black;
+    border-radius: 15px;
+}
+

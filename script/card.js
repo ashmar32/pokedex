@@ -7,10 +7,11 @@ const moveTwo = document.querySelector('#move-two');
 const moveThree = document.querySelector('#move-three');
 const pokeImage = document.querySelector('#poke-img');
 const hp = document.querySelector('#hp');
+const type = document.querySelector('#type');
 
 
 //      making fetch to pokeapi
-const fetchPokeApi = async (pokeName) => {
+async function fetchPokeApi(pokeName) {
     const response = await fetch('https://pokeapi.co/api/v2/pokemon/' + pokeName);
     const pokeData = await response.json();
 //      get that data back as json
@@ -18,24 +19,26 @@ const fetchPokeApi = async (pokeName) => {
 }
 
 //      event listener for search bar
-search.addEventListener('change', async (event) => {
+search.addEventListener('change', async function (event) {
     const pokeData = await fetchPokeApi(event.target.value)
     console.log(pokeData)
-    console.log(pokeData.stats[5].base_stat)
 
 //    sets HP
     hp.innerHTML = pokeData.stats[5].base_stat + ' HP'
 
+//    sets pokemon type
+    type.innerHTML = pokeData.types[0].type.name
+
 
 //    sets pokemon id
-    number.innerHTML = '#'+ pokeData.id.toString().padStart(3, '0');
+    number.innerHTML = '#' + pokeData.id.toString().padStart(3, '0');
 
-//      sets moves
+//    sets moves
     moveOne.innerHTML = pokeData.moves[0].move.name
     moveTwo.innerHTML = pokeData.moves[1].move.name
     moveThree.innerHTML = pokeData.moves[2].move.name
 
-//      set image
+//    set image
     pokeImage.src = pokeData.sprites.other.dream_world.front_default;
 
 });
