@@ -21,7 +21,7 @@ body {
     padding: 1.25rem;
 }
 
-#top {
+#card {
     height: 100%;
     padding: 1.25rem;
     /*border: 1px  solid black;*/
@@ -49,6 +49,7 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     width: 60%;
+    text-transform: capitalize;
 }
 
 #hp {
@@ -82,15 +83,18 @@ body {
     /*border-radius: 8px;*/
     border-bottom: solid 1px black;
     padding: 1rem;
+    text-transform: capitalize;
+
 }
 
 #desc span {
+    /*maybe use move1, move2 ,move 3 to try and get each to have a full like underneath...why it no work?!*/
     border-bottom: solid 1px black;
 }
 
 #type {
     border: 1px  solid black;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 #about {
@@ -104,10 +108,10 @@ body {
     padding: 0 .75rem;
 }
 
-/*hr {*/
-/*    border: 1px solid black;*/
-/*    width: 250%;*/
-/*}*/
+#footer {
+    padding: 12px;
+    border: 1px solid black;
+}
 
 
 
